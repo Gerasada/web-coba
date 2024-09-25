@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-const ENGDIS_BASE_API_URL = "https://eduiwebservices20.engdis.com/api/";
+const ENGDIS_BASE_API_URL = "https://edservices.engdis.com/api/";
 
 app.get("/", (req, res, next) => {
   res.json({ hello: "world" });
@@ -18,7 +18,7 @@ app.post("/apis/Auth/Login", (req, res, next) => {
   axios
     .post(ENGDIS_BASE_API_URL + "Auth/forcelogin", {
       CommunityVersion: "100",
-      InstitutionId: "5232957", // KMITL
+      InstitutionId: "5236828", // KMITL
       Password: req.body.password,
       UserName: req.body.username,
     })
