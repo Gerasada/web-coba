@@ -135,7 +135,7 @@ export const LoginPage: React.FC = () => {
               radius="md"
               className="w-6/12 bg-white text-orange-600 hover:bg-orange-600 hover:text-white shadow"
               onClick={() =>
-                window.open("https://ed20.engdis.com/thai#/login", "_blank", "noopener,noreferrer")
+                window.open("https://ed.engdis.com/smktelkommlg#/login", "_blank", "noopener,noreferrer")
               }
             >
               EngDis เว็บไซต์
